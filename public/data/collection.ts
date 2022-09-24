@@ -6,12 +6,16 @@ export interface CollectionPiece {
   tokenId: number,
 }
 
+let nftRoot = 'nft-data';
+
 const collection: CollectionPiece[] = [
   {
     nftName: 'WIND OF CHANGE',
     physicalName: 'OC1',
     shortDescription: 'There is nothing permanent except change',
-    physicalPhotos: [],
+    physicalPhotos: [
+
+    ],
     tokenId: 0,
   },
   {
@@ -34,70 +38,90 @@ const collection: CollectionPiece[] = [
     nftName: 'CELEBRATIONS',
     physicalName: 'MC11',
     shortDescription: "Don't wait to celebrate just for a special moment. Celebrate every moment while still breathing.",
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'INTERNATIONAL LOVE',
     physicalName: 'CM J3',
     shortDescription: 'Why must we create war? Let’s make LOVE instead of WAR.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'PEACE PLEASE',
     physicalName: 'CM J1',
     shortDescription: 'Having peace of mind is the first step for all kinds of peace.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      `${nftRoot}/PeacePlease/`,
+    ],
     tokenId: 0,
   },
   {
     nftName: 'RELATIONSHIP OF ART & FASHION',
     physicalName: 'OJ1',
     shortDescription: 'Art and fashion allows us to dress and express ourselves uniquely without the limitations of any trend or season.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'DIVINE LOVE',
     physicalName: 'DJ1',
     shortDescription: 'Divine Love is behind all gentle motherly love, it is powerful, limitless and unconditional.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'BLACK DEER',
     physicalName: 'MC5',
     shortDescription: 'Why try to look the same if we were born to stand out? Be brave and be proud to be different.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'PEEKABOO',
     physicalName: 'MC4',
     shortDescription: 'Things don’t disappear just because we stop seeing them.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'OXYGEN',
     physicalName: 'MC3',
     shortDescription: 'One thing we all share is that we all breathe in oxygen.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'DESERT ROSE',
     physicalName: 'MC2',
     shortDescription: 'Every one of us has a unique self-identity.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
   {
     nftName: 'GO WENT GONE',
     physicalName: 'MC1',
     shortDescription: 'It seems like our global environment is racing, but it is racing towards extinction.',
-    physicalPhotos: [],
+    physicalPhotos: [
+      '',
+    ],
     tokenId: 0,
   },
 ];
