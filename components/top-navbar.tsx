@@ -3,19 +3,22 @@ import {
   Box,
   Text,
   Flex,
+  HStack,
+  Image,
   useDisclosure,
-  Link as RouterNavLink,
+  useColorModeValue,
+  Link as ChakraLink,
 } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const webLinks = [
   { name: 'Home', path: '/home' },
   { name: 'About', path: '/about' },
+  { name: 'Link1', path: '/link1' },
+  { name: 'Link2', path: '/link2' },
 ];
 
 interface NavLinkProps {
-  index?: string;
   name: string;
   path: string;
   onClose: () => void;
@@ -23,13 +26,12 @@ interface NavLinkProps {
 
 // helper
 function NavLink({
-  index,
   name,
   path,
   onClose,
 }: NavLinkProps) {
   return (
-    <RouterNavLink
+    <ChakraLink
       as={Link}
       px={2}
       py={1}
@@ -42,21 +44,52 @@ function NavLink({
         color: 'blue.500',
       }}
       onClick={() => onClose()}
-      to={path}
+      href={path}
     >
       {name}
-    </RouterNavLink>
-  )
-}
-
-export default function TopNav() {
-  const router = useRouter();
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  return (
-    <Box bg='gray.700' px={4} boxShadow="lg">
-
-    </Box>
+    </ChakraLink>
   );
 }
 
+export default function TopNav() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  return (
+    <Box bg={useColorModeValue('white', 'gray.700')} px={4} boxShadow="lg">
+      <Flex
+        h={16}
+        alignItems="center"
+        justifyContent="space-between"
+        w={['98%', '98%', '98%']}
+        mx="auto"
+      >
+        <HStack>
+          <Image
+            h="50px"
+            src="logo.png"
+            alt='oops logo'
+          />
+          <Text
+            color="gray.500"
+          >
+            Only One On Planets
+          </Text>
+        </HStack>
+        <HStack
+          as="nav"
+          spacing={4}
+          display={{ base: 'none', md: 'flex' }}
+        >
+          {webLinks.map((link) => (
+            <NavLink
+              key={link.toString()}
+              name={link.name}
+              path={link.path}
+              onClose={onClose}
+            />
+          ))}
+        </HStack>
+      </Flex>
+    </Box >
+  );
+}
