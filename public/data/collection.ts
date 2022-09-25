@@ -3,6 +3,7 @@ export interface CollectionPiece {
   physicalName: string,
   shortDescription: string,
   physicalPhotos: string[],
+  NFTVideoLocation: string,
   tokenId: number,
 }
 
@@ -16,6 +17,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
 
     ],
+    NFTVideoLocation: "nft-data/WindsOfChange/video.mp4",
     tokenId: 0,
   },
   {
@@ -25,6 +27,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/3nity/video.mp4",
     tokenId: 0,
   },
   {
@@ -32,6 +35,7 @@ const collection: CollectionPiece[] = [
     physicalName: 'MC9',
     shortDescription: 'The flower of life is said to be the blueprint of all creation in the universe',
     physicalPhotos: [],
+    NFTVideoLocation: "nft-data/FlowerOfLife/video.mp4",
     tokenId: 0,
   },
   {
@@ -41,6 +45,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/Celebrations/video.mp4",
     tokenId: 0,
   },
   {
@@ -50,6 +55,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/InternationalLove/video.mp4",
     tokenId: 0,
   },
   {
@@ -59,6 +65,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       `${nftRoot}/PeacePlease/`,
     ],
+    NFTVideoLocation: "nft-data/PeacePlease/video.mp4",
     tokenId: 0,
   },
   {
@@ -68,6 +75,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/RelationshipOfArtAndFashion/video.mp4",
     tokenId: 0,
   },
   {
@@ -77,6 +85,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/DivineLove/video.mp4",
     tokenId: 0,
   },
   {
@@ -86,6 +95,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/BlackDeer/video.mp4",
     tokenId: 0,
   },
   {
@@ -95,6 +105,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/Peekaboo/video.mp4",
     tokenId: 0,
   },
   {
@@ -104,6 +115,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/Oxygen/video.mp4",
     tokenId: 0,
   },
   {
@@ -113,6 +125,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/DesertRose/video.mp4",
     tokenId: 0,
   },
   {
@@ -122,6 +135,7 @@ const collection: CollectionPiece[] = [
     physicalPhotos: [
       '',
     ],
+    NFTVideoLocation: "nft-data/GoWentGone/video.mp4",
     tokenId: 0,
   },
 ];
