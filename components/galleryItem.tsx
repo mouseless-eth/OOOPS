@@ -32,6 +32,7 @@ const GalleryItem = ({ collection }: Props) => {
       >
         <HoverVideoPlayer
           videoSrc={NFTVideoLocation}
+          focused={true}
         />
       </Box>
       <Stack
