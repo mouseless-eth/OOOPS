@@ -1,7 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import {
   Box,
-  Image,
+  Text,
+  Stack,
 } from '@chakra-ui/react';
 import { CollectionPiece } from '../public/data/collection';
 import HoverVideoPlayer from 'react-hover-video-player';
@@ -10,23 +11,50 @@ interface Props {
   collection: CollectionPiece;
 }
 
-export default function GalleryItem({ collection }: Props) {
+const GalleryItem = ({ collection }: Props) => {
   const {
     nftName,
-    physicalName,
+    //physicalName,
     shortDescription,
     NFTVideoLocation,
-    physicalPhotos,
-    tokenId,
+    //physicalPhotos,
+    //tokenId,
   } = collection;
 
   return (
-    <Box>
-      <Box>
+    <Box
+      p={4}
+      borderWidth={2}
+      borderColor="blackAlpha.800"
+      borderRadius={5}
+    >
+      <Box
+      >
         <HoverVideoPlayer
           videoSrc={NFTVideoLocation}
         />
       </Box>
+      <Stack
+        justify='center'
+        pt={1}
+      >
+        <Text
+          align='center'
+          fontSize='xl'
+          as='b'
+          w='100%'
+        >
+          {nftName}
+        </Text>
+        <Text
+          align='center'
+          fontSize='sm'
+        >
+          {shortDescription}
+        </Text>
+      </Stack>
     </Box>
   );
 }
+
+export default GalleryItem;

@@ -10,9 +10,12 @@ import collection from '../public/data/collection';
 
 const Home: NextPage = () => {
   return (
-    <Center>
+    <Center
+      px='20%'
+    >
       <SimpleGrid
-        columns={3}
+        columns={[1, 1, 2, 2, 3]}
+        spacing={5}
       >
         {collection.map(piece => {
           return <GalleryItem
