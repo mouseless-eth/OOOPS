@@ -6,16 +6,13 @@ import {
   HStack,
   Image,
   useDisclosure,
-  useColorModeValue,
   Link as ChakraLink,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
 const webLinks = [
-  { name: 'Home', path: '/home' },
   { name: 'About', path: '/about' },
-  { name: 'Link1', path: '/link1' },
-  { name: 'Link2', path: '/link2' },
+  { name: 'Physical', path: '/physical' },
 ];
 
 interface NavLinkProps {
@@ -55,7 +52,7 @@ export default function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bg={useColorModeValue('white', 'gray.700')} px={4} boxShadow="lg">
+    <Box bg='blackAlpha.50' px={4} boxShadow="lg">
       <Flex
         h={16}
         alignItems="center"
@@ -63,16 +60,28 @@ export default function TopNav() {
         w={['98%', '98%', '98%']}
         mx="auto"
       >
-        <HStack>
-          <Image
-            h="50px"
-            src="logo.png"
-            alt='oops logo'
-          />
-          <Text
-            color="gray.500"
+        <HStack
+          spacing={0}
+        >
+          <ChakraLink
+            as={Link}
+            href='/'
           >
-            Only One On Planets
+            <Image
+              h="50px"
+              src="logo.png"
+              alt='oops logo'
+              _hover={{
+                cursor:'pointer'
+              }}
+            />
+          </ChakraLink>
+          <Text
+            color="blackAlpha.900"
+            fontSize='2xl'
+            as='b'
+          >
+            OOOPS
           </Text>
         </HStack>
         <HStack
