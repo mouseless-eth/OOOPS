@@ -20,6 +20,7 @@ const Home: NextPage = () => {
     >
       <Image
         src='all-collections.png'
+        alt='all collections'
       />
       <VStack>
         <Heading>
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
       >
         {collection.map(piece => {
           return <GalleryItem
+            key={piece.toString()}
             collection={piece}
           />
         })}

@@ -10,16 +10,22 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.1.6",
     "@chakra-ui/react": "^2.3.4",
     "@chakra-ui/styled-system": "^2.3.3",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@rainbow-me/rainbowkit": "^0.6.1",
+    "@tanstack/query-core": "4.6.1",
+    "ethers": "^5.7.1",
     "framer-motion": "^6",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hover-video-player": "^9.7.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-native": "^0.70.1",
+    "wagmi": "^0.6.7"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
